@@ -11,6 +11,15 @@ public class Liskov {
         void dig();
     }
     
+    //La interfacz DuckActions nos presenta los métodos necesarios para por ejemplo instanciar una clase Duck, sin obhligarnos a tener métodos innecesarios
+    public interface DuckActions{
+        void run();
+        void fly();
+        void swim();
+    }
+    
+    
+    
     
     public class Animal implements AnimalActions{
         @Override
